@@ -18,3 +18,31 @@
 .container h1{
     font-size: 50px;
 }
+.setting{
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+.setting .fa-cog{
+    font-size: 2rem;
+    color: wheat;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+.setting-content{
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+.setting-content button{
+    background-color: black;
+    color: yellow;
+    width: 50%;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.hide{
+    display: none;
+}
