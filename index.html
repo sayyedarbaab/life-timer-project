@@ -9,14 +9,46 @@
 </head>
 <body>
     <div class="background">
-        <div class="container">
+        <div id="initialText" class="container">
             <h1>Kindly Enter Your Date of Birth</h1>
         </div>
+        <div id="afterDOBBtnTxt" class="container">
+           <div class="center">
+            <h1>How Much Life Journy Covered,Till Now</h1>
+            <div class="time-container">
+                <h2>
+                    <div id="year">0</div>
+                    Year
+                </h2>
+                <h2>
+                    <div id="month">0</div>
+                    Month
+                </h2>
+                <h2>
+                    <div id="days">0</div>
+                    Days
+                </h2>
+                <h2>
+                    <div id="hour">0</div>
+                    Hours
+                </h2>
+                <h2>
+                    <div id="mint">0</div>
+                    Minute
+                </h2>
+                <h2>
+                    <div id="second">0</div>
+                    Second
+                </h2>
+            </div>
+           </div>
+        </div>
         <div class="setting">
-            <i id="setIcon" class="fa fa-cog" onclick={toggleDOBSelector()}>
+            <i id="settingIcon" class="fa fa-cog" onclick={toggleDOBSelector()}>
                 <div id="settingContent" class="setting-content hide">
-                    <input type="date" id="dobinput"/>
-                    <button id="dobButton">Add DOB</button>
+                    <input type="date" id="dobInput"/>
+
+                    <button id="dobButton" onclick={setDOBHandler()}>Add DOB</button>
                 </div>
             </i>
         </div>

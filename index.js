@@ -1,18 +1,39 @@
 let isDOBOpen=false
+let dateOfBirth;
 
-const SettingCog=document.getElementById("setIcone")
-const SettingContent=document.getElementById("settingContent")
+const settingCogEl=document.getElementById("settingIcon");
+const initialTextEl=document.getElementById("initialText")
+const afterDOBBtnTxtEl=document.getElementById("afterDOBBtnTxt");
+
+const settingContentEl=document.getElementById("settingContent");
+const dobButtonEl=document.getElementById("dobButton");
+const dobInputEl=document.getElementById("dobInput");
 
 
 
 const toggleDOBSelector=()=>{
-    if(isDOBOpen === true){
-        SettingContent.classList.add("hide")   
+    if(isDOBOpen){
+        settingContentEl.classList.add("hide")   
     }else{
-        SettingContent.classList.remove("hide")
+       settingContentEl.classList.remove("hide")
     }
     isDOBOpen = !isDOBOpen;
     console.log("Toggle", isDOBOpen);
 }
 
-SettingCog.addEventListener("click",toggleDOBSelector)
+const setDOBHandler=()=>{
+    dateOfBirth = dobInputEl.value;
+    if(dateOfBirth){
+        initialTextEl.classList.add("hide");
+        afterDOBBtnTxtEl.classList.remove("hide");
+    }else{
+        afterDOBBtnTxtEl.classList.add("hide");
+        initialTextEl.classList.remove("hide");
+    }
+};
+
+setDOBHandler();
+
+settingContentEl.addEventListener("click",toggleDOBSelector);
+
+dobButtonEl.addEventListener("click",setDOBHandler);
