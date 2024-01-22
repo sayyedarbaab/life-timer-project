@@ -9,6 +9,12 @@ const settingContentEl=document.getElementById("settingContent");
 const dobButtonEl=document.getElementById("dobButton");
 const dobInputEl=document.getElementById("dobInput");
 
+const yearEl=document.getElementById("year")
+const monthEl=document.getElementById("month")
+const daysEl=document.getElementById("day")
+const hourEl=document.getElementById("hour")
+const mint=document.getElementById("mint")
+
 
 
 const toggleDOBSelector=()=>{
@@ -33,6 +39,16 @@ const setDOBHandler=()=>{
 };
 
 setDOBHandler();
+
+
+const updateAge=()=>{
+    const currentDate=new Date();
+    console.log(currentDate)
+    const dateDiff=currentDate-dateOfBirth;
+    console.log("date DIFF",dateDiff);
+}
+
+updateAge();
 
 settingContentEl.addEventListener("click",toggleDOBSelector);
 
