@@ -1,63 +1,63 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.background{
-    background-image: url('./images/bgimage.jpg');
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
+.background {
+  background-image: url("./images/bgimage.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.container{
-    display: grid;
-    place-items: center;
-    height: 100vh;
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
 }
-.container h1{
-    font-size: 50px;
+.container h1 {
+  font-size: 50px;
 }
-.setting{
-    position: absolute;
-    bottom: 20px;
-    right: 30px;
+.setting {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
 }
-.setting .fa-cog{
-    font-size: 2rem;
-    color: wheat;
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    cursor: pointer;
+.setting .fa-cog {
+  font-size: 2rem;
+  color: wheat;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
 }
-.setting-content{
-    display: flex;
-    gap: 0.5rem;
-    padding: 1rem;
+.setting-content {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
 }
-.setting-content button{
-    background-color: black;
-    color: yellow;
-    width: 50%;
-    border-radius: 5px;
-    font-size: 1rem;
+.setting-content button {
+  background-color: black;
+  color: yellow;
+  width: 50%;
+  border-radius: 5px;
+  font-size: 1rem;
 }
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
-.time-container{
-    margin-top:15px;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
+.time-container {
+  margin-top: 15px;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
-.time-container h2{
-    text-align: center;
-    font-size: 2rem;
+.time-container h2 {
+  text-align: center;
+  font-size: 2rem;
 }
-.time-container div{
-    font-size: 4rem;
-    color: darkblue;
+.time-container div {
+  font-size: 4rem;
+  color: darkblue;
 }
